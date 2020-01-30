@@ -15,10 +15,15 @@ let equals = document.querySelector(".equals")
 
 for (let button of buttons) {
 button.addEventListener("click", function() {
-    let newEl = document.createElement("div")
-    let text = document.createTextNode(button.innerText)
-    newEl.appendChild(text)
-    answer.appendChild(newEl)
+ 
+    value = this.innerText;
+    console.log(value);
+    answer.innerText += value;
+
+    // let newEl = document.createElement("div")
+    // let text = document.createTextNode(button.innerText)
+    // newEl.appendChild(text)
+    // answer.appendChild(newEl)
 })
 }
 
